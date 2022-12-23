@@ -1,18 +1,14 @@
 {
-  "name": "bot-project-gabut",
+  "name": "economy bot",
   "version": "1.0.0",
-  "description": "economy bot",
+  "description": "super simple economy bot!",
   "main": "main.js",
   "scripts": {
-    "test": "."
+    "start": "node ."
   },
-  "repository": {
-    "type": "git",
-    "url": "github.com/galvinlol/economybot"
-  },
-  "keywords": [
-    "a"
-  ],
-  "author": "galvin",
-  "license": "ISC"
-}
+  "keywords": [],
+  "author": "Galvin#6062",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^13.8.1"
+  }
