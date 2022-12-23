@@ -12,17 +12,17 @@ module.exports.run = (client, message, args, usertemp) => {
         for (i in user) {
             registered++;
             user[i].money = parseInt(user[i].money) + parseInt(args[0])
-            
+
         }
-		fs.writeFile("database.json", JSON.stringify(user), err => {
-                if (err) {
-                    console.log(err);
-                    message.channel.send("Something went wrong bruh error logs have been saved on ./logs/error.txt");
-                    return;
-                } else {
-                    console.log(`${user[i].money}`);
-                }
-            })
+        fs.writeFile("database.json", JSON.stringify(user), err => {
+            if (err) {
+                console.log(err);
+                message.channel.send("Something went wrong bruh error logs have been saved on ./logs/error.txt");
+                return;
+            } else {
+                console.log(`${user[i].money}`);
+            }
+        })
         message.channel.send(`successfully give all **${args[0]}** ©️!, ${registered} accounts Has Been Given.`);
         registered = 0;
     }
