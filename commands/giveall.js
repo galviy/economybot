@@ -9,6 +9,9 @@ module.exports.run = (client, message, args, usertemp) => {
         if (!args[0]) {
             return message.channel.send("Please input gems u want to giveall");
         }
+        if (Number.isNaN(+args[0]) == true) {
+            return message.reply("please use integer dont try to break me :skull:")'
+        }
         for (i in user) {
             registered++;
             user[i].money = parseInt(user[i].money) + parseInt(args[0])
