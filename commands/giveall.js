@@ -10,7 +10,7 @@ module.exports.run = (client, message, args, usertemp) => {
             return message.channel.send("Please input gems u want to giveall");
         }
         if (Number.isNaN(+args[0]) == true) {
-            return message.reply("please use integer dont try to break me :skull:")'
+            return message.reply("please use integer dont try to break me :skull:");
         }
         for (i in user) {
             registered++;
